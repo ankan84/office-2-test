@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-div{
+
+  height: 100vh;
+  width: 100%;
+ 
+  
+
+   
+}
+
+.content-div{
+  
+  
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   
+   /* border: 1px solid red; */
+
+
+}
+
+.left {
+    flex: 3;
+
+
+}
+.left h4, .left p{
+  text-align: center;
+}
+
+.right {
+  flex: 1;
+  /* border: 1px solid red; */
+  border-left: 1px solid black
+}
+
+.right h4{
+  text-align:center;
+  
+}
+
+
+.add-product {
+  width: 100%;
+  height: auto;
+  padding: 14px 14px;
+}
+
+
+.cards-text{
+  text-align:start;
+  border: 1px solid  red;
+}
+
+
+.card{
+  position: relative;
+}
+
+.icon{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+}
