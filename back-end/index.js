@@ -29,10 +29,12 @@ app.get('/get/products', async (req, res) => {
 
 })
 
-app.delete('/delete/products', async (req, res) => {
+app.post('/delete/products', async (req, res) => {
     try {
-        const { id } = req.body;
-        let response = await Product.deleteOne({ _id: id })
+        const { _id } = req.body;
+
+        
+        let response = await Product.deleteOne({ _id: _id })
         if (response) {
             res.status(200).send("delete Successful")
         } else {
@@ -54,7 +56,6 @@ app.put('/edit/products', async (req, res) => {
        
         const {id,name,description,category,price}=req.body;
 
-        console.log(id,name,description,category,price)
           if(req.files!=null){
 
             cloud.config({
